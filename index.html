@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halloween 2023</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1>Halloween Pumpkin Carving + Bonfire</h1>
+  <h2> <a href="https://maps.app.goo.gl/RrqwUpwJjAyg5fvf6">1199 Merlin Ave SE</a></h2>
+  <h2>Bring your own Pumpkin & Drinks</h2>
+  <h2>October 29<sup>th</sup>, 2023</h2>
+  <h2> <a
+      href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NnBqM2lwMW1jcGkzNGI5bWNsaW0yYjlrYzhyamdiOXA2NHEzY2JiMjY0b2pjb2o0NmhpMzZkYjI2cyBraXBsaW5nZHVubGFwQG0&tmsrc=kiplingdunlap%40gmail.com">5:00PM
+      (Five) to Late</a>
+  </h2>
+  <img id="bonfire" src="./assets/y8.gif" alt="">
+</body>
+
+<style>
+  body {
+    background: radial-gradient(circle at bottom, rgb(10, 10, 67), black);
+    height: 100vh;
+  }
+
+  h1 {
+    color: rgb(231, 119, 0);
+    text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 50px;
+    /* margin-top: 100px; */
+    font-weight: 400;
+    text-shadow: -2 -2 5px rgb(255, 252, 75);
+    animation: flicker 5s infinite ease-in-out alternate;
+  }
+
+  @keyframes flicker {
+    0% {
+      text-shadow: -3px -3px 5px rgb(255, 252, 75);
+    }
+
+    4% {
+      text-shadow: -4px -4px 5px rgb(255, 252, 75);
+    }
+
+    5% {
+      text-shadow: -4px -4px 5px rgb(255, 252, 75);
+    }
+
+    6% {
+      text-shadow: -2px -2px 5px rgb(255, 252, 75);
+    }
+
+    100% {
+      text-shadow: -2px -2px 5px rgb(255, 252, 75);
+    }
+  }
+
+  h2 {
+    color: rgb(231, 119, 0);
+    text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(40, 202, 0);
+  }
+
+  /* no scrollbars */
+  html {
+    overflow: hidden;
+  }
+
+  #bonfire {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+  }
+</style>
+
+</html>
