@@ -8,130 +8,138 @@
   <title>Kip's Birthday Halloween</title>
   <meta name="title" content="Kip's Birthday Halloween" />
   <meta name="description"
-    content="Halloween Pumpkin Carving + Bonfire Party: October 19th, 6p-late! BYO Pumpkin and any drinks you like!" />
+    content="Birthoween: October 25th, 6p-late! BYO Pumpkin and any drinks you like!" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://urbaned0ge.github.io/Hween23/" />
+  <meta property="og:url" content="https://urbaned0ge.github.io/Hween/" />
   <meta property="og:title" content="Kip's Birthday Halloween" />
   <meta property="og:description"
-    content="Kip's Birthday/Halloween Pumpkin Carving + Bonfire Party: October 19th, 6p-late! BYO Pumpkin and any drinks you like!" />
-  <meta property="og:image" content="https://urbaned0ge.github.io/Hween23/assets/jack.gif" />
+    content="Kip's Birthday/Birthoween: October 25th, 6p-late! BYO Pumpkin and any drinks you like!" />
+  <meta property="og:image" content="https://urbaned0ge.github.io/Hween/assets/jack.gif" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://urbaned0ge.github.io/Hween/" />
   <meta property="twitter:title" content="Kip's Birthday Halloween" />
   <meta property="twitter:description"
-    content="Halloween Pumpkin Carving + Bonfire Party: October 19th, 6p-late! BYO Pumpkin and any drinks you like!" />
-  <meta property="twitter:image" content="https://urbaned0ge.github.io/Hween23/assets/jack.gif" />
+    content="Birthoween: October 19th, 6p-late! BYO Pumpkin and any drinks you like!" />
+  <meta property="twitter:image" content="https://urbaned0ge.github.io/Hween/assets/jack.gif" />
   <!-- Meta Tags Generated with https://metatags.io -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"> -->
   <link rel="icon" href="./assets/skull.png">
 </head>
 
 <body>
-  <h1>Halloween Pumpkin Carving + Bonfire</h1>
+  <h1>Birthoween</h1>
   <h2> <a href="https://maps.app.goo.gl/RrqwUpwJjAyg5fvf6" target='_blank'>1199 Merlin Ave SE</a></h2>
   <h2>Bring your own Pumpkin & Drinks</h2>
   <h3>Costumes encouraged, heavy snacks provided.</h3>
-  <h2>October 19<sup>th</sup>, 2024</h2>
+  <h2>October 25<sup>th</sup>, 2025</h2>
   <h2 class='tooltip'><a
       href="https://calendar.app.google/8bzYsoEuobi27X3c8"
       target='_blank'>6:00PM to Late</a>
   </h2>
   <h4>Click for calendar invite</h4>
-  <img id="bonfire" src="./assets/y8.gif" alt="bonfire.gif">
-  <!-- <img id="Jack" src="./assets/jack.gif" alt="BOO!" hidden> -->
+
+  <div class="footer-container">
+
+      <!-- start tombstone-->
+      <div class="tombstone">
+        <div class="upperTombstone"></div>
+        <div class="lowerTombstone">
+        <a href="#top" class="">
+          <div >
+            <img src="./assets/skull.png" alt="a scary skull" width="100px" height="100px">
+          </div>
+        </a>
+          <a href="mailto:kip@kipdunlap.me" target="_blank">QUESTIONS?</a>
+        </div>
+
+
+
 </body>
 
 <style>
-  body {
-    background: radial-gradient(circle at bottom, rgb(10, 10, 67), black);
-    height: 100vh;
-  }
+
+body {
+/* background: linear-gradient(to bottom,  rgb(0, 0, 0) 0%, #ffffff 40%); */
+}
+
+.footer-container {
+	margin: 0 auto;
+	text-align: center;
+  min-height: 100%;
+  /* position: relative; */
+}
+
+.tombstone {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	font-size: 0;
+	bottom: 0px;
+  left: calc(50% - 125px);
+}
+
+.upperTombstone {
+	border-radius: 50%;
+	width: 200px;
+	height: 90px;
+	background: rgb(26, 26, 26);
+	margin: 0 auto;
+	position: relative;
+	top: 65px;
+	z-index: -10;
+	font-size: 1rem;
+}
+
+.lowerTombstone {
+	width: 250px;
+	background: rgb(26, 26, 26);
+	border-radius: 5px 5px 0px 0px;
+	overflow: hidden;
+	position: relative;
+	font-size: 1rem;
+	padding: 5px 0px 95px 0px;
+}
 
   h1 {
-    color: rgb(231, 119, 0);
     text-align: center;
-    font-family: 'Pixelify Sans', sans-serif;
     font-size: 50px;
-    /* margin-top: 100px; */
-    font-weight: 400;
-    text-shadow: -2 -2 6px rgb(255, 252, 75);
-    animation: flicker 5s infinite ease-in-out alternate;
-  }
-
-  @keyframes flicker {
-    0% {
-      text-shadow: -3px -3px 6px rgb(255, 252, 75);
-    }
-
-    4% {
-      text-shadow: -4px -4px 6px rgb(255, 252, 75);
-    }
-
-    5% {
-      text-shadow: -4px -4px 6px rgb(255, 252, 75);
-    }
-
-    6% {
-      text-shadow: -2px -2px 6px rgb(255, 252, 75);
-    }
-
-    100% {
-      text-shadow: -2px -2px 6px rgb(255, 252, 75);
-    }
   }
 
   h2 {
-    color: rgb(231, 119, 0);
     text-align: center;
-    font-family: 'Pixelify Sans', sans-serif;
     font-size: 30px;
     margin: 10px;
     font-weight: 400;
   }
   h3 {
-    color: rgb(231, 119, 0);
     text-align: center;
-    font-family: 'Pixelify Sans', sans-serif;
     font-size: 25px;
-    margin: 10px;
-    font-weight: 400;
+
   }
 
   h4 {
     text-align: center;
-    color: rgb(163, 163, 163);
-    font-family: 'Pixelify Sans', sans-serif;
     margin: 0;
   }
 
   a {
-    text-decoration: none;
-    color: rgb(40, 202, 0);
-    border-bottom: 2px solid rgb(211, 211, 211);
+    /* text-decoration: none; */
+    /* color: rgb(40, 202, 0); */
+    /* border-bottom: 2px solid rgb(211, 211, 211); */
   }
 
   /* no scrollbars */
   html {
     overflow: hidden;
   }
-
-  #bonfire {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: -1;
-  }
-
 
 </style>
 
