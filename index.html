@@ -53,26 +53,26 @@
       <div class="tombstone">
         <div class="upperTombstone"></div>
         <div class="lowerTombstone">
+          <div >
+            <img src="./assets/GoreySkull.svg" alt="a scary skull" width="100px" height="100px">
+          </div>
 
-            <div >
-              <img src="./assets/GoreySkull.svg" alt="a scary skull" width="100px" height="100px">
-            </div>
+        <add-to-calendar-button class="tombstone, fondamento-regular-italic"
+          name="Kip's BirthOween"
+          description="Costumes encouraged, snacks provided. Pumpkin Carving early, Karaoke after dark!"
+          startDate="2025-10-25"
+          startTime="19:00"
+          endDate="2025-10-26"
+          endTime="02:00"
+          timeZone="America/New_York"
+          location="1199 Merlin Ave SE"
+          options="'Apple','Google'"
+          listStyle="overlay"
+          buttonStyle="flat"
+          trigger="click"
+          pastDateHandling="disable"
+        ></add-to-calendar-button>
 
-  <add-to-calendar-button class="tombstone, fondamento-regular-italic"
-    name="Kip's BirthOween"
-    description="Costumes encouraged, snacks provided. Pumpkin Carving early, Karaoke after dark!"
-    startDate="2025-10-25"
-    startTime="19:00"
-    endDate="2025-10-26"
-    endTime="02:00"
-    timeZone="America/New_York"
-    location="1199 Merlin Ave SE"
-    options="'Apple','Google'"
-    listStyle="overlay"
-    buttonStyle="flat"
-    trigger="click"
-    pastDateHandling="disable"
-  ></add-to-calendar-button>
         </div>
 
 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
@@ -119,7 +119,7 @@ body {
 .upperTombstone {
 	border-radius: 50%;
 	width: 200px;
-	height: 90px;
+	height: 100px;
 	background: rgb(26, 26, 26);
 	margin: 0 auto;
 	position: relative;
@@ -129,17 +129,18 @@ body {
 }
 
 .lowerTombstone {
-	width: 250px;
+	width: 70svw;
 	background: rgb(26, 26, 26);
 	border-radius: 5px 5px 0px 0px;
 	overflow: hidden;
 	position: relative;
 	font-size: 1rem;
-	padding: 5px 0px 95px 0px;
+	padding: 5px 0px 12svw 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: -10;
 }
 
   h1 {
