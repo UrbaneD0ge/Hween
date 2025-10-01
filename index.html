@@ -30,13 +30,14 @@
   <meta property="twitter:image" content="https://urbaned0ge.github.io/Hween/assets/GoreySkull.svg" />
   <!-- Meta Tags Generated with https://metatags.io -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
   <link rel="icon" href="./assets/GoreySkull.svg" type="image/x-icon">
 </head>
 
 <body>
+  <div class="text">
   <h1>BIRTHOWEEN</h1>
   <h2> <a href="https://maps.app.goo.gl/RrqwUpwJjAyg5fvf6" target='_blank'>1199 Merlin Ave SE</a></h2>
   <h2>BYO Pumpkin & Drinks</h2>
@@ -46,7 +47,7 @@
       href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NnNzbTZkcGc2MWo2Y2I5aGNoajZhYjlrNjBvNmFiYjI2a3FtMmI5bmNwaWplcDMzNjVpNmFvYjNjZyBraXBsaW5nZHVubGFwQG0&tmsrc=kiplingdunlap%40gmail.com"
       target='_blank'>7:00PM to Late</a>
     </h2>
-
+</div>
     <div class="footer-container">
 
       <!-- start tombstone-->
@@ -54,10 +55,10 @@
         <div class="upperTombstone"></div>
         <div class="lowerTombstone">
           <div >
-            <img src="./assets/GoreySkull.svg" alt="a scary skull" width="100px" height="100px">
+            <img id="gorey" src="./assets/GoreySkull.svg" alt="a scary skull" width="100px" height="100px">
           </div>
 
-        <add-to-calendar-button class="tombstone, fondamento-regular-italic"
+        <add-to-calendar-button id="calButton" class="tombstone, fondamento-regular-italic"
           name="Kip's BirthOween"
           description="Costumes encouraged, snacks provided. Pumpkin Carving early, Karaoke after dark!"
           startDate="2025-10-25"
@@ -75,6 +76,7 @@
 
         </div>
 
+<script src='script.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 </body>
 
@@ -100,6 +102,10 @@ body {
   min-height: 100vh;
 }
 
+#gorey, #calButton {
+  z-index: 50;
+}
+
 .footer-container {
 	margin: 0 auto;
 	text-align: center;
@@ -116,6 +122,11 @@ body {
   left: calc(50% - 125px);
 }
 
+.text {
+  z-index: 30;
+  position: relative;
+}
+
 .upperTombstone {
 	border-radius: 50%;
 	width: 200px;
@@ -124,7 +135,7 @@ body {
 	margin: 0 auto;
 	position: relative;
 	top: 65px;
-	z-index: -10;
+	/* z-index: -10; */
 	font-size: 1rem;
 }
 
@@ -140,7 +151,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: -10;
+  /* z-index: -10; */
 }
 
   h1 {
