@@ -37,28 +37,29 @@
 </head>
 
 <body>
-  <div class="text">
-  <h1>BIRTHOWEEN + SCARYOKE</h1>
-  <h2> <a href="https://maps.app.goo.gl/RrqwUpwJjAyg5fvf6" target='_blank'>1199 Merlin Ave SE</a></h2>
-  <h2>BYO Pumpkin & Drinks</h2>
-  <h3>Costumes encouraged, snacks provided. Pumpkin Carving early, Karaoke after dark!</h3>
-  <h2>October 24<sup>th</sup>, 2026</h2>
-  <h2 class='tooltip'><a
-      href="https://calendar.app.google/zVwNwmX1xxFNRsYx6"
-      target='_blank'>7:00PM to Late</a>
-    </h2>
-</div>
+
     <div class="footer-container">
 
       <!-- start tombstone-->
       <div class="tombstone">
         <div class="upperTombstone"></div>
         <div class="lowerTombstone">
-          <div >
-            <img id="gorey" src="./assets/GoreySkull.svg" alt="a scary skull" width="100px" height="100px">
-          </div>
+            <div class="text">
+              <h1>BIRTHOWEEN + SCARYOKE</h1>
+              <div >
+                <img id="gorey" src="./assets/GoreySkull.svg" alt="a scary skull" style="width: clamp(80px, 20vw, 150px); height: auto;">
+              </div>
+              <h2> <a href="https://maps.app.goo.gl/RrqwUpwJjAyg5fvf6" target='_blank'>1199 Merlin Ave SE</a></h2>
+              <h2>BYO Pumpkin & Drinks</h2>
+              <h3>Costumes encouraged, snacks provided.<br>Pumpkin Carving early, Karaoke after dark!</h3>
+              <h2>October 24<sup>th</sup>, 2026</h2>
+              <h2 class='tooltip'><a
+                  href="https://calendar.app.google/zVwNwmX1xxFNRsYx6"
+                  target='_blank'>7:00PM to Late</a>
+              </h2>
+            </div>
 
-        <add-to-calendar-button id="calButton" class="tombstone, fondamento-regular-italic"
+        <!-- <add-to-calendar-button id="calButton" class="tombstone, fondamento-regular-italic"
           name="Kip's BirthOween + Scaryoke"
           description="Costumes encouraged, snacks provided. Pumpkin Carving early, Karaoke after dark!"
           startDate="2026-10-24"
@@ -72,12 +73,12 @@
           buttonStyle="flat"
           trigger="click"
           pastDateHandling="disable"
-        ></add-to-calendar-button>
+        ></add-to-calendar-button> -->
 
         </div>
 
 <script src='script.js'></script>
-<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script> -->
 </body>
 
 <style>
@@ -114,12 +115,16 @@ body {
 }
 
 .tombstone {
-	position: absolute;
-	display: inline-block;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 	text-align: center;
 	font-size: 0;
 	bottom: 0px;
-  left: calc(50% - 125px);
+	left: 50%;
+	transform: translateX(-50%);
+	max-height: 95vh;
 }
 
 .text {
@@ -129,41 +134,44 @@ body {
 
 .upperTombstone {
 	border-radius: 50%;
-	width: 200px;
-	height: 100px;
+	width: clamp(150px, 40vw, 300px);
+	height: clamp(50px, 13vw, 100px);
 	background: rgb(26, 26, 26);
 	margin: 0 auto;
 	position: relative;
-	top: 65px;
+	top: clamp(20px, 6vh, 65px);
+	flex-shrink: 0;
 	/* z-index: -10; */
 	font-size: 1rem;
 }
 
 .lowerTombstone {
-	width: clamp(250px, 50vw, 300px);
+	width: clamp(250px, 60vw, 600px);
 	background: rgb(26, 26, 26);
 	border-radius: 5px 5px 0px 0px;
-	overflow: hidden;
+	overflow-y: auto;
+	max-height: 80vh;
 	position: relative;
 	font-size: 1rem;
-	padding: 5px 0px 12svw 0px;
+	padding: 5px 0px min(12svw, 30px) 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-shrink: 1;
   /* z-index: -10; */
 }
 
   h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: clamp(24px, 6vw, 50px);
     font-family: 'Fondamento', cursive;
   }
 
   h2 {
     font-family: 'Fondamento', cursive;
     text-align: center;
-    font-size: 30px;
+    font-size: clamp(16px, 4vw, 30px);
     margin: 10px;
     font-weight: 400;
   }
@@ -171,7 +179,7 @@ body {
   h3 {
     font-family: 'Fondamento', cursive;
     text-align: center;
-    font-size: 25px;
+    font-size: clamp(14px, 3.5vw, 25px);
   }
 
   h4 {
@@ -190,6 +198,20 @@ body {
   /* no scrollbars */
   html {
     overflow: hidden;
+  }
+
+  @media (max-width: 600px) {
+    .upperTombstone {
+      width: 60vw;
+      height: 20vw;
+      top: 10vw;
+    }
+
+    .lowerTombstone {
+      width: 92vw;
+      height: calc(100svh - 10vw);
+      max-height: none;
+    }
   }
 
 </style>
